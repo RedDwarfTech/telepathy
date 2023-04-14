@@ -1,14 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:wheel/wheel.dart';
 
-import '../../common/theme.dart';
 import '../../page/home/home.dart';
-import '../../page/login.dart';
-import 'global_controller.dart';
+import 'app_controller.dart';
 
 class AppPage extends StatelessWidget {
   @override
@@ -19,8 +16,8 @@ class AppPage extends StatelessWidget {
       return new HomeDefault();
     }
 
-    return GetBuilder<GlobalController>(
-        init: GlobalController(),
+    return GetBuilder<AppController>(
+        init: AppController(),
         builder: (controller) {
           return GetMaterialApp(
             title: 'Cruise',
@@ -37,7 +34,7 @@ class AppPage extends StatelessWidget {
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate,
               GlobalCupertinoLocalizations.delegate,
-              AppLocalizations.delegate
+              // AppLocalizations.delegate
             ],
             supportedLocales: [
               const Locale('en', ''), // English, no country code
@@ -46,7 +43,7 @@ class AppPage extends StatelessWidget {
               // ... other locales the app supports
             ],
             routes: {
-              "login": (BuildContext context) => LoginPage(),
+              //"login": (BuildContext context) => LoginPage(),
             },
 
             home: buildHomePage(),
