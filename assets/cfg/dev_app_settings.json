@@ -1,0 +1,13 @@
+{
+  "baseUrl": "http://192.168.10.93:80",
+  "appId": "ejsiIebZWw",
+  "logUrl": "http://192.168.10.93:80",
+  "authUrl": "http://192.168.10.93:80",
+  "shareUrl": "https://api.poemhub.top",
+  "userName": "genieUserName",
+  "accessToken": "x-access-token",
+  "refreshToken": "x-refresh-token",
+  "registerTime": "registerTime",
+  "nickname": "nickname",
+  "loginUrl": "/post/user/login"
+}

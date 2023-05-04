@@ -1,0 +1,33 @@
+{
+  "buttons": {
+    "login": "Log In",
+    "sign_in": "Sign-in",
+    "logout": "Logout",
+    "sign_in_fb": "Sign-in with Facebook",
+    "sign_in_google": "Sign-in with Google",
+    "sign_in_apple": "Sign-in with Apple",
+    "sign_up": "Sign Up",
+    "submit": "Submit",
+    "phone": "Phone",
+    "password": "Password",
+    "proceed": "Proceed"
+  },
+  "tip": {
+    "no_account": "Don't have an account?",
+    "no_account": "Already have an account?",
+    "not_login": "Click to login"
+  },
+  "nav": {
+    "home": "Home",
+    "settings": "Settings"
+  },
+  "menu": {
+    "language": "Language",
+    "privacy": "Privacy Policy",
+    "terms": "Terms Of Service",
+    "about": "About SleepEase"
+  },
+  "appbar": {
+    "setting": "Settings"
+  }
+}

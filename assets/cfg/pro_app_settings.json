@@ -1,0 +1,13 @@
+{
+  "baseUrl": "https://ai.poemhub.top",
+  "appId": "ejsiIebZWw",
+  "logUrl": "https://ai.poemhub.top",
+  "authUrl": "https://ai.poemhub.top",
+  "shareUrl": "https://ai.poemhub.top",
+  "userName": "genieUserName",
+  "accessToken": "x-access-token",
+  "refreshToken": "x-refresh-token",
+  "registerTime": "registerTime",
+  "nickname": "nickname",
+  "loginUrl": "/post/user/login"
+}

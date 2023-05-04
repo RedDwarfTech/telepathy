@@ -2,15 +2,37 @@ name: telepathy
 description: the AI chat hub
 version: 0.0.1
 environment:
-  sdk: ">=2.14.0<3.0.0"
+  sdk: ">=2.17.0 <=3.7.11"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
+  # 在版本号中，^符号表示依赖版本的限制范围。具体来说，^0.17.0的含义是可以使用0.17.0及以后的版本，但不包括1.0.0及以后的版本。
+  # 如果使用版本号为1.0.0的库，则需要显式更新其中的 intl 依赖为 1.0.0，因为该版本已超出了^0.17.0的限制范围。
+  flutter_gen: ^5.2.0
+  get_cli: ^1.8.1
+  audioplayers: ^3.0.0
+  get_storage: 2.1.1
+  path: ^1.8.3
+  avatars: ^3.0.0
+  email_validator: ^2.1.17
+  hexcolor: ^3.0.1
+  google_fonts: ^3.0.1
+  flutter_markdown: 0.6.14
   wheel:
     git:
       url: https://github.com/RedDwarfTech/wheel.git
       ref: main
+flutter_intl:
+  enabled: true
 
+dev_dependencies:
+  intl_generator:  0.4.1
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/cfg/
+    - assets/law/
+    - assets/images/
